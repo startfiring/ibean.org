@@ -1,0 +1,179 @@
+{
+    "exams":
+    [
+        {
+            "title":"tofel",
+            "ico":"icon-number10",
+            "description":"Scheduled on 2020 May",
+            "tag":"#"
+        },
+        {
+            "title":"AP - Calculas BC",
+            "ico":"icon-number11",
+            "description":"Scheduled on 2020 May",
+            "tag":"#"
+        },
+        {
+            "title":"AP - Physical",
+            "ico":"icon-number12",
+            "description":"AP - Pysics scheduled on 2021 May",
+            "tag":"#"
+        },
+        {
+            "title":"AP - economics",
+            "ico":"icon-number13",
+            "description":"Scheduled on 2021 May",
+            "tag":"#"
+        },
+        {
+            "title":"AP - US History",
+            "ico":"icon-number14",
+            "description":"Scheduled on 2021 May",
+            "tag":"#"
+        },
+        {
+            "title":"SAT",
+            "ico":"icon-number15",
+            "description":"SAT Schedule on 2020 Aug, 2021 May",
+            "tag":"#"
+        }
+    ],
+    "projects":
+    [
+        {
+            "title":"Java",
+            "image":"images/java.jpg",
+            "category":"2020 Self Study",
+            "tag":"#"
+        },
+        {
+            "title":"python",
+            "image":"images/python.jpg",
+            "category":"2020 Self Study",
+            "tag":"#"
+        },
+        {
+            "title":"C++",
+            "image":"images/cpp.jpg",
+            "category":"2020 JDFZ",
+            "tag":"#"
+        },
+        {
+            "title":"FRC",
+            "image":"images/frc.jpg",
+            "category":"2019, JDFZ, FRC",
+            "tag":"#"
+        },
+        {
+            "title":"Ying Cai Plan",
+            "image":"images/yingcaijihua.jpg",
+            "category":"2019, Shanghai",
+            "tag":"#"
+        },
+        {
+            "title":"sports",
+            "image":"images/sports.jpg",
+            "category":"2019, Shanghai",
+            "tag":"#"
+        }
+    ],
+    "photogroups":
+    [
+        {
+            "title":"Military Training",
+            "image":"photos/index/2019-08-training.jpg",
+            "date":"2019-08-01",
+            "catagory":"School Event",
+            "description":"one week military training at Dong Fang Lv Zhou",
+            "tag":"military"
+        },
+        {
+            "title":"AP Study",
+            "image":"photos/index/2019-09-ap.jpg",
+            "date":"2019-09-09",
+            "catagory":"Education",
+            "description":"AP Education for Calculas BC, US History, Physics",
+            "tag":"apstudy"
+        },
+        {
+            "title":"TOFEL",
+            "image":"photos/index/2019-08-tofel.jpg",
+            "date":"2019-09-09",
+            "catagory":"Education",
+            "description":"TOFEL training, YingBei",
+            "tag":"tofel"
+        },
+        {
+            "title":"3vs3 Match",
+            "image":"photos/index/2019-08-3vs3.jpg",
+            "date":"2019-09-09",
+            "catagory":"Sports",
+            "description":"Basketball Game, Eastern China Science & Tech University",
+            "tag":"3vs3"
+        },
+        {
+            "title":"Graduation Travel",
+            "image":"photos/index/2019-07-arizona.jpg",
+            "date":"2019-09-07",
+            "catagory":"Travel",
+            "description":"Graducation Travel",
+            "tag":"us"
+        },
+        {
+            "title":"Yellow Stone",
+            "image":"photos/index/2019-06-yellowstone.jpg",
+            "date":"2019-09-06",
+            "catagory":"Travel",
+            "description":"Personal Travel before group",
+            "tag":"yellowstone"
+        },
+        {
+            "title":"Bye, XiNanMo",
+            "image":"photos/index/2019-06-graduate.jpg",
+            "date":"2019-09-06",
+            "catagory":"Education",
+            "description":"Graduate from XiNanMo",
+            "tag":"xinanmo"
+        },
+        {
+            "title":"Training Camp, JZIB",
+            "image":"photos/index/2019-05-jzib.jpg",
+            "date":"2019-09-06",
+            "catagory":"Education",
+            "description":"First Training Camp in JZIB",
+            "tag":"JZIB"
+        },
+        {
+            "title":"Japan ski",
+            "image":"photos/index/2018-02-japan.jpg",
+            "date":"2019-09-06",
+            "catagory":"Travel",
+            "description":"in name of SKI, play in Tokyo & Osaka",
+            "tag":"Japan"
+        },
+        {
+            "title":"Summary Trip ChangBaiShan",
+            "image":"photos/index/2017-08-jilin.jpg",
+            "date":"2019-09-06",
+            "catagory":"Travel",
+            "description":"cold in Summary",
+            ",url":"changbaishan"
+        },
+        {
+            "title":"Winter in AU",
+            "image":"photos/index/2017-01-australia.jpg",
+            "date":"2019-09-06",
+            "catagory":"Travel",
+            "description":"first trip to Southern",
+            "tag":"australia"
+        },
+        {
+            "title":"U-13 Basketball Match",
+            "image":"photos/index/2016-08-match.jpg",
+            "date":"2019-09-06",
+            "catagory":"Sports",
+            "description":"first trip to Southern",
+            "tag":"u13"
+        }
+    ]
+}

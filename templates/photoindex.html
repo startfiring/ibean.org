@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>{{ title }}</title>
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="ico/favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+		
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="photo/css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="photo/css/icomoon.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="photo/css/bootstrap.css">
+		<!-- Flexslider  -->
+		<link rel="stylesheet" href="photo/css/flexslider.css">
+		<!-- Owl Carousel  -->
+		<link rel="stylesheet" href="photo/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="photo/css/owl.theme.default.min.css">
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="photo/css/style.css">
+
+		<!-- Modernizr JS -->
+		<script src="photo/js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="photo/js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- jQuery -->
+		<script src="photo/js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="photo/js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="photo/js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="photo/js/jquery.waypoints.min.js"></script>
+
+		<!-- Magnific -->
+		<script src="photo/js/jquery.magnific-popup.min.js"></script>
+		<script src="photo/js/magnific-popup-options.js"></script>
+		<!-- Isotope & imagesLoaded -->
+		<script src="photo/js/isotope.pkgd.min.js"></script>
+		<script src="photo/js/imagesloaded.pkgd.min.js"></script>
+		<!-- GSAP  -->
+		<script src="photo/js/TweenLite.min.js"></script>
+		<script src="photo/js/CSSPlugin.min.js"></script>
+		<script src="photo/js/EasePack.min.js"></script>
+		<!-- MAIN JS -->
+		<script src="photo/js/main.js"></script>
+	</head>
+
+	<body>
+
+		<div id="fh5co-page">
+			<div class="aside-toggle btn-circle">
+				<a href="/index"><span></span><em>Home</em></a>
+			</div>
+			<div class="back-to-home btn-circle">
+				<a href="/photos"><span></span><em>Photos</em></a>
+			</div>
+
+	<div class="container-fluid" id="fh5co-image-grid">
+		<div class="grid">
+			<div class="grid-sizer"></div>
+
+			{%for photogroup in photoGroups %} 
+			<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+		  		<a href="photos/tags?{{photogroup.tag}}">
+					<div class="img-wrap">
+						<img src="{{photogroup.image}}" alt="" class="img-responsive">
+					</div>
+					<div class="text-wrap">
+						<div class="text-inner">
+							<div>
+								<h2>{{photogroup.title}}</h2>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			{%endfor%}
+			
+		</div>
+	</div>
+
+	<!--footer-->
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="col-md-12 fh5co-copyright text-center">
+				<p class="copyright text-center">&copy; Designed with Template from <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> </p>
+			</div>
+		</div>
+	</footer>
+
+	</body>
+</html>
+

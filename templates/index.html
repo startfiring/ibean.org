@@ -1,0 +1,258 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Microsoft Azure Technology" />
+	<meta name="keywords" content="Microsoft, Cloud Architecture, Azure" />
+	<meta name="author" content="kang_xh@hotmail.com" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+    <link rel="stylesheet" href="/flew/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/flew/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/flew/css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="/flew/css/flexslider.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="/flew/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/flew/css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="/flew/css/style.css">
+
+	<link rel="stylesheet" href="/icomoon/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="/flew/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="/flew/js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+
+	<body>
+
+	<div id="fh5co-page">
+	
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1><a href="index">Michael</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#photos">Photos</a></li>
+						<li><a href="#blogs">Blogs</a></li>
+						<li class="cta"><a href="about.html">Get More</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+    <!-- image slider-->
+	<aside id="fh5co-hero" class="/flew/js-fullheight">
+			<div class="flexslider js-fullheight">
+				<ul class="slides">
+				<li style="background-image: url(images/slide_1.jpg);">
+					<div class="overlay-gradient"></div>
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url(images/slide_2.jpg);">
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url(images/slide_3.jpg);">
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+						</div>
+					</div>
+				</li>
+				</ul>
+			</div>
+	</aside>
+
+	<a name="education"></a>
+	<div id="fh5co-services-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+					<h2>Exams On the Road</h2>
+				</div>
+			</div>
+			<div class="row">
+
+                {%for exam in exams %} 
+				<div class="col-md-4 animate-box">
+					<div class="services">
+						<i class="{{exam.ico}}""></i>
+						<div class="desc">
+							<h3>{{exam.title}}</h3>
+							<p>{{exam.description}}</p>
+						</div>
+					</div>
+                </div>
+                {%endfor%} 
+
+			</div>
+		</div>
+	</div>
+
+    <a name="projects"></a>
+	<div id="fh5co-work-section" class="fh5co-light-grey-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+					<h2>Latest Projects</h2>
+					<p>Participate in project is the best way to learn</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- For loop logic of jinja template -->
+			
+				{%for project in projects %} 
+				<div class="col-md-4 animate-box">
+					<a href="{{project.url}}" class="item-grid text-center">
+						<div class="image" style="background-image: url({{project.image}})"></div>
+						<div class="v-align" style="background-color: rgba(195, 197, 194, 0.89)" >
+							<div class="v-align-middle">
+								<h3 class="title">{{project.title}}</h3>
+								<h5 class="category">{{project.category}}</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				{%endfor%} 
+
+			</div>
+		</div>
+	</div>
+
+	<div class="fh5co-cta" style="background-image: url(images/slide_2.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="col-md-12 text-center animate-box">
+				<h3>Try To Update The Site Monthly</h3>
+			</div>
+		</div>
+	</div>
+
+	<!-- lastet Photo Groups-->
+	<a name="photos"></a>
+	<div id="fh5co-work-section" class="fh5co-light-grey-section">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+					<h2>FOOTPRINT</h2>
+					<p>connected with my friends while gowing up </p>
+				</div>
+			</div>
+
+			<div class="row">
+
+				{%for photogroup in photogroups %} 
+				<div class="col-md-4 animate-box">
+					<a href="{{photogroup.url}}" class="item-grid text-center">
+						<div class="image" style="background-image: url({{photogroup.image}})"></div>
+						<div class="v-align">
+							<div class="v-align-middle">
+								<h3 class="title">{{photogroup.title}}</h3>
+								<h5 class="category">{{photogroup.date}} | {{photogroup.catagory}}</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				{%endfor%} 
+							
+				<div class="col-md-12 text-center animate-box">
+					<p><a href="/photos" class="btn btn-primary with-arrow">View More <i class="icon-arrow-right"></i></a></p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a name="blogs"></a>
+	<div id="fh5co-services-section" style="background-color: azure">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4 animate-box">
+					<div class="services">
+						<i class="icon-blog"></i>
+						<div class="desc">
+							<h3>Onedrive for CICD</h3>
+							<h4>Sep 2019 | website</h4>
+							<p>Web content is hosted on IIS Server, use onedrive to quick update the content. Modify locally, Syncronized within a minute</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 animate-box">
+					<div class="services">
+						<i class="icon-blog"></i>
+						<div class="desc">
+							<h3>Java IDE in VS Code</h3>
+							<h4>Sep 2019 | Java</h4>
+							<p>Failed to debug single java file in VS Code. someone said it is supported but I never make it work. Java project works well with VS Code Debug</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 text-center animate-box">
+						<p><a href="blogs/index.html" class="btn btn-primary with-arrow">View More<i class="icon-arrow-right"></i></a></p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--footer-->
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="col-md-12 fh5co-copyright text-center">
+				<p class="copyright text-center">&copy; Designed with Template from <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> </p>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+	<!-- jQuery -->
+	<script src="/flew/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="/flew/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="/flew/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="/flew/js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="/flew/js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="/flew/js/jquery.flexslider-min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="/flew/js/main.js"></script>
+
+	</body>
+</html>
+
